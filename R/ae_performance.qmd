@@ -1,0 +1,72 @@
+---
+title: "A&E Performance Report"
+format:
+  html:
+    toc: true
+    code-fold: true
+    embed-resources: true
+    df-print: paged
+
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| output: false
+library(tidyverse)
+library(lubridate)
+library(dbplyr)
+library(janitor)
+library(writexl)
+library(here)
+
+report <- new.env()
+source(here("R", "report.R"), local = report)
+```
+
+**Winter 2023/24**
+
+# Metric
+
+Some commentary on why the metric is, why its important, and any caveats about the data
+
+::: {.panel-tabset}
+
+## National
+
+```{r}
+#| echo: false
+#| warning: false
+#| output: true
+# timeseries graph of indicator
+# report$plot_timeseries(data)
+```
+
+
+## ICB
+
+```{r}
+#| echo: false
+#| warning: false
+#| output: true
+# Probably need to add a filter to this due to number of ICBs
+
+# graph of current performance with previous years performce as well and maybe
+# national performance (all normalised)
+# report$plot_timeseries(data)
+
+# dynamic text about selected ICB
+```
+
+## Trust
+
+```{r}
+#| echo: false
+#| warning: false
+#| output: true
+# Probably need to add a filter
+# report$plot_timeseries(data)
+```
+
+:::

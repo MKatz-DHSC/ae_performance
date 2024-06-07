@@ -13,8 +13,14 @@ knitr::opts_chunk$set(
 
 # Winter A&E performance
 
-The goal of ae_performance is to produce analysis of A&E winter performance. Data is sourced from [A&E Attendances and Emergency Admissions 2023-24](https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2023-24/)
+The goal of ae_performance is to produce analysis of A&E winter performance. Data is sourced from [A&E Attendances and Emergency Admissions 2023-24](https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2023-24/).
+
+Here we are defining the winter period as Nov to Feb inclusive.
 
 ## How to run
 
 To run the code source `main.R` file in the base directory.
+
+## Data used
+
+All data used is public and so lookups have been committed alongside code.
